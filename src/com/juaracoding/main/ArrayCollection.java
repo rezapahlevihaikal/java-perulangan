@@ -1,6 +1,7 @@
 package com.juaracoding.main;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayCollection {
 	public static void main(String args[]) {
@@ -55,5 +56,18 @@ public class ArrayCollection {
 		score.add("45");
 		System.out.println(nama.addAll(score));
 		System.out.println(nama);
+		
+		
+		ArrayList<String> data3 = new ArrayList<String>();
+		data3.add("Aab");
+		data3.add("Budi");
+		data3.add("Cita");
+		data3.add("Aneke");
+		
+		Collections.sort(data3);
+		System.out.println(data3);
+		
+		int index = Collections.binarySearch(data3, "Aneke");
+		System.out.println("Index : "+index);
 	}
 }
